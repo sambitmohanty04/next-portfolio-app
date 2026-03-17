@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Projects = () => {
   return (
     <>
-        <div className='py-16'>
+        <div className='py-16 data-aos = "fade-up"'>
             <h1 className='text-center text-2xl md:text-4xl xl:text-4xl font-bold text-white'>
                 A small selection of recent <br /><span className='text-cyan-300'>Projects</span>
             </h1>
