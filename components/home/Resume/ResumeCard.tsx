@@ -4,10 +4,11 @@ import { IconType } from "react-icons/lib";
 type Props = {
   Icon: IconType;
   role: string;
+  desc : string;
   date?: string;
 };
 
-const ResumeCard = ({ Icon, role, date }: Props) => {
+const ResumeCard = ({ Icon, role, desc, date }: Props) => {
   return (
     <div className="mb-6">
       <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md">
@@ -29,8 +30,7 @@ const ResumeCard = ({ Icon, role, date }: Props) => {
             {role}
           </h2>
           <p className="text-gray-300 text-sm sm:text-base pt-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
-            been the industry's standard dummy text ever since the 1500s.
+            {desc}
           </p>
         </div>
 

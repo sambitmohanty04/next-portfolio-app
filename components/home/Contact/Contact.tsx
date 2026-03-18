@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
         <div className='py-16'>
-            <div className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 
+            <div className='w-[90%] sm:[w-70%] md:w-[80%] lg:w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 
             items-center'>
                 {/* ---------text-------- */}
                 <div>
@@ -23,13 +23,13 @@ const Contact = () => {
                         <div className='flex item-center space-x-3 mb-4'>
                             <FiPhoneCall className='w-7 h-7 text-cyan-300' />
                             <p className='text-xl font-semibold text-gray-400'>
-                                +01 245-235-0000
+                                +91 907-823-4876
                             </p>
                         </div>
                         <div className='flex item-center space-x-3 mb-4'>
                             <BsEnvelope className='w-7 h-7 text-cyan-300' />
                             <p className='text-xl font-semibold text-gray-400'>
-                                abc@gmail.com
+                                sambit.jitu11@gmail.com
                             </p>
                         </div>
                         <div className='flex item-center space-x-3 mb-4'>

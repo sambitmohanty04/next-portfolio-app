@@ -2,6 +2,7 @@ import React from 'react';
 import ResumeCard from './ResumeCard';
 import { FaCodepen, FaReact } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
+import { RiGraduationCapLine } from "react-icons/ri";
 
 const Resume = () => {
   return (
@@ -14,9 +15,21 @@ const Resume = () => {
                         My work <span className='text-cyan-300'>experience</span>
                     </h1>
                     <div className='mt-10'>
-                        <ResumeCard Icon = {FaCodepen} role = 'Frontend Developer' />
-                        <ResumeCard Icon = {FaReact} role = 'React Developer' />
-                        <ResumeCard Icon = {MdDesignServices} role = 'UI and UX Designer' />
+                        <ResumeCard 
+                            Icon = {FaCodepen} 
+                            role = 'Frontend Developer'
+                            desc = 'A passionate Frontend Developer with strong experience in building user-friendly web applications. Skilled in modern JavaScript frameworks and UI/UX best practices, with a focus on performance, scalability, and clean code.'
+                         />
+                         <ResumeCard 
+                            Icon = {FaReact} 
+                            role = 'React Developer'
+                            desc = 'Passionate React Developer with expertise in developing scalable web applications using React, Next.js, and modern JavaScript. Strong understanding of performance optimization, reusable components, and clean architecture.'
+                         />
+                         <ResumeCard 
+                            Icon = {MdDesignServices} 
+                            role = 'UI and UX Designer'
+                            desc = 'Detail-oriented UI/UX Designer experienced in designing intuitive interfaces, conducting user research, and creating wireframes and prototypes to enhance user experience.'
+                         />                        
                     </div>
                 </div>
                 {/* ----education sec---- */}
@@ -26,18 +39,21 @@ const Resume = () => {
                     </h1>
                     <div className='mt-10'>
                         <ResumeCard 
-                            Icon = {FaCodepen} 
+                            Icon = {RiGraduationCapLine} 
                             role = 'UI Development Course'
+                            desc=''
                             date = 'Feb 2023 - May 2023'
                          />
                         <ResumeCard 
-                            Icon = {FaReact} 
+                            Icon = {RiGraduationCapLine} 
                             role = 'Bachelor of Science'
+                            desc=''
                             date = 'Aug 2005 - May 2008'
                         />
                         <ResumeCard 
-                            Icon = {MdDesignServices} 
+                            Icon = {RiGraduationCapLine} 
                             role = 'Council of Higher Secondary Education' 
+                            desc=''
                             date = 'Aug 2003 - May 2005'
                         />
                     </div>
