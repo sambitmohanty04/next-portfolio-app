@@ -12,9 +12,9 @@ const Resume = () => {
                 {/* ----work sec---- */}
                 <div>
                     <h1 className='text-3xl sm:text-4xl font-bold text-white'>
-                        My work <span className='text-cyan-300'>experience</span>
+                        My Work <span className='text-cyan-300'>Experience</span>
                     </h1>
-                    <div className='mt-10'>
+                    <div className='mt-10' data-aos="fade-down-right">
                         <ResumeCard 
                             Icon = {FaCodepen} 
                             role = 'Frontend Developer'
@@ -37,12 +37,18 @@ const Resume = () => {
                     <h1 className='text-3xl sm:text-4xl font-bold text-white'>
                         My <span className='text-cyan-300'>Education</span>
                     </h1>
-                    <div className='mt-10'>
+                    <div className='mt-10' data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="1000">
                         <ResumeCard 
                             Icon = {RiGraduationCapLine} 
                             role = 'UI Development Course'
                             desc=''
-                            date = 'Feb 2023 - May 2023'
+                            date = 'Feb 2018 - May 2018'
+                         />
+                         <ResumeCard 
+                            Icon = {RiGraduationCapLine} 
+                            role = 'Multimedia Course'
+                            desc=''
+                            date = 'Aug 2010 - May 2013'
                          />
                         <ResumeCard 
                             Icon = {RiGraduationCapLine} 

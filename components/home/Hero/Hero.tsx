@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import ParticleBg from "./ParticleBg";
 
@@ -41,11 +42,13 @@ const Hero = () => {
                     }}/>
                 </span>
             </h2>
-            <button className='mt-6 px-10 py-3 bg-blue-700 hover:bg-blue-900 transition-all duration-300
-            cursor-pointer rounded-full text-lg font-medium' data-aos = "fade-up">
-                <span>See My Work</span>
-                <BsArrowRight className='h-5 w-5 ml-2 inline-block' />
-            </button>
+            <Link href="#projects">
+                <button className='mt-6 px-10 py-3 bg-blue-700 hover:bg-blue-900 transition-all duration-300
+                cursor-pointer rounded-full text-lg font-medium' data-aos = "fade-up">
+                    <span>See My Work</span>
+                    <BsArrowRight className='h-5 w-5 ml-2 inline-block' />
+                </button>
+            </Link>
         </div>
     </div>
   )
