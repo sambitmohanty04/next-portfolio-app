@@ -22,7 +22,7 @@ const Hero = () => {
             <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-6 text-center font-bold 
             tracking-wide' data-aos = "fade-up">
                 Creating Web Products, <br />
-                brands <span className='text-cyan-200'> and experiences.</span>
+                Brands <span className='text-cyan-200'> And Experiences.</span>
             </h1>
             <h2 className='mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center' 
             data-aos = "fade-up">
