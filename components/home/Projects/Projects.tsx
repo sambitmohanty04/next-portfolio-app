@@ -15,7 +15,7 @@ const projects = [
     },
     {
         title: "Travelling Website",
-        img: "/images/tourstravels_2.png",
+        img: "/images/travels.png",
         desc: "Web Apps, UI Development",
     },
     {
