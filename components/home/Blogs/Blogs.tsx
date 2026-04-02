@@ -11,19 +11,19 @@ const Blogs = () => {
             <div className='w-[90%] sm:[w-70%] mx-auto grid grid-cols-1 xl:grid-cols-4 xl:gap-6 gap-10 
             items-center mt-16'>
               <BlogCard 
-                image = '/images/p1.jpg'
+                image = '/images/ecom.png'
                 title = 'Lorem Ipsum is simply dummy text of the printing. '
               />
               <BlogCard 
-                image = '/images/p1.jpg'
+                image = '/images/ecom.png'
                 title = 'Lorem Ipsum is simply dummy text of the printing. '
               />
               <BlogCard 
-                image = '/images/p1.jpg'
+                image = '/images/ecom.png'
                 title = 'Lorem Ipsum is simply dummy text of the printing. '
               />
               <BlogCard 
-                image = '/images/p1.jpg'
+                image = '/images/ecom.png'
                 title = 'Lorem Ipsum is simply dummy text of the printing. '
               />
             </div>
