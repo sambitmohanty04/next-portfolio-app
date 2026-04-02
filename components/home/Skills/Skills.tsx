@@ -1,14 +1,23 @@
 'use client'
 import React from 'react'
-import { RiReactjsLine } from "react-icons/ri";
-import { FaCss3, FaGithub } from "react-icons/fa";
-import { TbBrandJavascript, TbBrandTypescript, TbBrandBootstrap, TbBrandTailwind, TbFileTypeHtml } from "react-icons/tb";
+import { RiReactjsLine, RiNextjsLine } from "react-icons/ri";
+import { FaCss3, FaGithub, FaNodeJs } from "react-icons/fa";
+import { TbBrandJavascript, TbBrandTypescript, TbBrandBootstrap, 
+            TbBrandTailwind, TbFileTypeHtml, TbBrandAdobePhotoshop } from "react-icons/tb";
 import Tilt from 'react-parallax-tilt';
 
 const skills = [
     {
+        name : 'Node js',
+        icon : <FaNodeJs />
+    },
+    {
         name : 'React js',
         icon : <RiReactjsLine />
+    },
+    {
+        name : 'Next js',
+        icon : <RiNextjsLine />
     },
     {
         name : 'Javascript',
@@ -19,12 +28,12 @@ const skills = [
         icon : <TbBrandTypescript />
     },
     {
-        name : 'Bootstrap 5',
-        icon : <TbBrandBootstrap />
-    },
-    {
         name : 'Html',
         icon : <TbFileTypeHtml />
+    },
+    {
+        name : 'Bootstrap 5',
+        icon : <TbBrandBootstrap />
     },
     {
         name : 'Css',
@@ -37,6 +46,10 @@ const skills = [
     {
         name : 'Github',
         icon : <FaGithub />
+    },
+    {
+        name : 'Adobe Photoshop',
+        icon : <TbBrandAdobePhotoshop />
     }
 ]
 

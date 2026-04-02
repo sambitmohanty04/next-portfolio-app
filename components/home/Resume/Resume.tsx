@@ -23,7 +23,7 @@ const Resume = () => {
                          <ResumeCard 
                             Icon = {FaReact} 
                             role = 'React Developer'
-                            desc = 'Passionate React Developer with expertise in developing scalable web applications using React, Next.js, and modern JavaScript. Strong understanding of performance optimization, reusable components, and clean architecture.'
+                            desc = 'Build scalable, high-performance web applications using modern React architecture, delivering seamless user experiences and maintainable code.'
                          />
                          <ResumeCard 
                             Icon = {MdDesignServices} 

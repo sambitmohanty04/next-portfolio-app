@@ -5,27 +5,27 @@ import Image from 'next/image';
 const projects = [
     {
         title: "Boat Selling Website",
-        img: "/images/ecom_web_1.png",
+        img: "/images/travel_1.png",
         desc: "Web Apps, React Development",
     },
     {
         title: "Medicine Website",
-        img: "/images/medicine_website_1.png",
+        img: "/images/medicine_website.png",
         desc: "Web Apps, UI Development",
     },
     {
         title: "Travelling Website",
-        img: "/images/travels.png",
+        img: "/images/tourinrome.png",
         desc: "Web Apps, UI Development",
     },
     {
         title: "Switchblade Website",
-        img: "/images/blade_pro.png",
+        img: "/images/blade.png",
         desc: "Web Apps, UI Development",
     },
     {
         title: "Travelling Website",
-        img: "/images/tourinrome_web.png",
+        img: "/images/travels_2.png",
         desc: "Web Apps, UI Development",
     },
 ]
@@ -64,13 +64,13 @@ const Projects = () => {
                 {
                     projects.slice(0, visible).map((item, index) => (
                         <div key={index} className="bg-white/5 p-3 rounded-xl">
-                            <div className="w-full h-[300] overflow-hidden rounded-lg">
+                            <div className="w-full h-[300] overflow-hidden rounded-lg group">
                                 <Image 
                                     src={item.img}
                                     alt={item.title}
                                     width={800}
-                                    height={700}
-                                    className="w-full h-full object-cover"
+                                    height={1400}
+                                    className="w-full object-cover transition-transform duration-500 group-hover:translate-y-[-50%]"
                                 />
                             </div>
 
