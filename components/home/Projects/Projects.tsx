@@ -4,6 +4,11 @@ import Image from 'next/image';
 
 const projects = [
     {
+        title: "Email Extract Software",
+        img: "/images/Software.png",
+        desc: "Web Apps, React Development",
+    },
+    {
         title: "Boat Selling Website",
         img: "/images/travel_1.png",
         desc: "Web Apps, React Development",

@@ -1,10 +1,40 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import { BsEnvelope } from "react-icons/bs";
 import { FiPhoneCall, FiMapPin } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
+
+    const [ form, setForm ] = useState({
+        name : "",
+        email : "",
+        phone : "",
+        message : ""
+    })
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setForm({...form, [e.target.name] : e.target.value })
+    }
+
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const res = await fetch('/api/contact', {
+            method : 'POST',
+            body : JSON.stringify(form)
+        })
+
+        const data = await res.json();
+
+        if(data.success) {
+            alert('Message sent successfully')
+        } else {
+            alert('Failed to sent message')
+        }
+    }
+
   return (
     <>
         <div className='py-16'>
@@ -57,30 +87,38 @@ const Contact = () => {
                 </div>
                 {/* ----form---- */}
                 <div className='md:p-10 p-5 bg-[#10102e] rounded-lg'>
-                    <form className="mx-auto">
+                    <form onSubmit={handleSubmit} className="mx-auto">
                         <input 
                             type='text' 
+                            name = "name"
                             placeholder='Name'
+                            onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
                         />
 
                         <input 
-                            type='email' 
+                            type='email'
+                            name = 'email' 
                             placeholder='Email Address'
+                            onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
                         />
 
                         <input 
-                            type='text' 
+                            type='text'
+                            name = 'phone' 
                             placeholder='Phone'
+                            onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
                         />
 
-                        <textarea 
+                        <textarea
+                            name = 'message' 
                             placeholder='Enter Message'
+                            onChange={handleChange}
                             className='w-full h-32 px-4 py-2 mt-2 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b] resize-none'
                         ></textarea>
