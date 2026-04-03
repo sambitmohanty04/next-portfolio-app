@@ -5,7 +5,7 @@ import Image from 'next/image';
 const projects = [
     {
         title: "Email Extract Software",
-        img: "/images/software.png",
+        img: "/images/email.png",
         desc: "Web Apps, React Development",
     },
     {
@@ -87,9 +87,7 @@ const Projects = () => {
                             </p>
                         </div>
                     ))
-                }
-                
-                
+                }                
             </div>
             <div className='flex justify-center items-center gap-4 mt-10'>
                 {visible < projects.length && (
