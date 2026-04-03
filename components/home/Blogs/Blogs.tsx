@@ -6,7 +6,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   const fetchBlogs = async () => {
-    const res = await fetch("/api/blogs");
+    const res = await fetch("/api/blogs", { cache: "no-store" });
     const data = await res.json();
     setBlogs(data.blogs);
   };
