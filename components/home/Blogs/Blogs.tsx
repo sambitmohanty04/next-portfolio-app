@@ -2,13 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import BlogCard from './BlogCard'
 
-// async function getBlogs() {
-//   const res = await fetch('/api/blogs', {
-//     cache: "no-store",
-//   })
-//   return res.json();
-// }
-
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
