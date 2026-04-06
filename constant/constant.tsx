@@ -13,25 +13,21 @@ export const NavLinks = [
     {
         id : 3,
         url : '#',
-        label : 'Skills'
+        label : 'Resume'
     },
     {
         id : 4,
         url : '#',
-        label : 'Resume'
+        label : 'Projects'
     },
+    
     {
         id : 5,
         url : '#',
-        label : 'Projects'
+        label : 'Skills'
     },
     {
         id : 6,
-        url : '#',
-        label : 'Works'
-    },
-    {
-        id : 7,
         url : '#',
         label : 'Contact'
     }
