@@ -1,12 +1,11 @@
-import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import Blog from "@/models/Blog";
+import { NextResponse } from "next/server";
 
 // ✅ CREATE BLOG
 export async function POST(req: Request) {
   try {
     await connectDB();
-
     const body = await req.json();
 
     const blog = await Blog.create({
@@ -15,7 +14,6 @@ export async function POST(req: Request) {
       tags: body.tags,
       image: body.image,
       user: body.user,
-      date: new Date(),
     });
 
     return NextResponse.json({
@@ -27,12 +25,12 @@ export async function POST(req: Request) {
 
     return NextResponse.json({
       success: false,
-      message: error.message || "Server Error",
+      message: error.message,
     });
   }
 }
 
-// ✅ GET BLOGS (FIXED: MUST BE CAPITAL GET)
+// ✅ GET BLOGS
 export async function GET() {
   try {
     await connectDB();

@@ -5,7 +5,7 @@ import Services from './Services/Services';
 import Resume from './Resume/Resume';
 import Projects from './Projects/Projects';
 import Skills from './Skills/Skills';
-import Blogs from './Blogs/Blogs';
+// import Blogs from './Blogs/Blogs';
 import Contact from './Contact/Contact';
 
 import AOS from 'aos';
@@ -33,7 +33,7 @@ const Home = () => {
       <Resume />
       <Projects />
       <Skills />
-      <Blogs />
+      {/* <Blogs /> */}
       <Contact />
     </div>
   )

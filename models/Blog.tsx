@@ -7,10 +7,8 @@ const BlogSchema = new mongoose.Schema(
     tags: [String],
     image: String,
     user: String,
-    date: Date,
   },
-  { timestamps: true }
+  { timestamps: true } // ✅ VERY IMPORTANT
 );
 
-export default mongoose.models.Blog ||
-  mongoose.model("Blog", BlogSchema);
+export default mongoose.models.Blog || mongoose.model("Blog", BlogSchema);
