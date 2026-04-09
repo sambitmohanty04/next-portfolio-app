@@ -19,7 +19,7 @@ export default function Chat() {
       {/* Toggle Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-5 right-5 bg-white/5 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg"
+        className="fixed bottom-15 right-5 bg-white/6 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg"
       >
         {open ? <FaTimes /> : <FaComments />}
       </button>
