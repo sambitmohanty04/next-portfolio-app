@@ -33,6 +33,13 @@ const Contact = () => {
         } else {
             alert('Failed to sent message')
         }
+
+        setForm({
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+        });
     }
 
   return (
@@ -92,6 +99,7 @@ const Contact = () => {
                             type='text' 
                             name = "name"
                             placeholder='Name'
+                            value={form.name}
                             onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
@@ -101,6 +109,7 @@ const Contact = () => {
                             type='email'
                             name = 'email' 
                             placeholder='Email Address'
+                            value={form.email}
                             onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
@@ -110,6 +119,8 @@ const Contact = () => {
                             type='text'
                             name = 'phone' 
                             placeholder='Phone'
+                            value={form.phone}
+                            maxLength={10}
                             onChange={handleChange}
                             className='w-full h-12 px-4 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b]'
@@ -118,6 +129,7 @@ const Contact = () => {
                         <textarea
                             name = 'message' 
                             placeholder='Enter Message'
+                            value={form.message}
                             onChange={handleChange}
                             className='w-full h-32 px-4 py-2 mt-2 text-white outline-none rounded-md text-sm placeholder:text-sm
                             placeholder:text-white/70 border border-white/20 bg-[#23234b] resize-none'

@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/Navbar/ResponsiveNav";
 import Footer from '@/components/home/Footer/Footer'
 import ScrollToTop from "@/components/helper/ScrollToTop";
+import Chat from '@/components/Chat/Chat';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <ResponsiveNav />
         {children}
+        <Chat />
         <Footer />
         <ScrollToTop />
       </body>
