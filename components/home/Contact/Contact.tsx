@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import toast from "react-hot-toast";
 import { BsEnvelope } from "react-icons/bs";
 import { FiPhoneCall, FiMapPin } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn} from "react-icons/fa";
@@ -29,9 +30,9 @@ const Contact = () => {
         const data = await res.json();
 
         if(data.success) {
-            alert('Message sent successfully')
+            toast.success("Message sent successfully");
         } else {
-            alert('Failed to sent message')
+            toast.error("Failed to upload message");
         }
 
         setForm({

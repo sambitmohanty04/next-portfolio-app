@@ -24,12 +24,5 @@ export default function Chat() {
         {open ? <FaTimes /> : <FaComments />}
       </button>
     </>
-    // <div className="fixed bottom-15 right-5 z-50">
-    //   <Link href="/chat">
-    //     <button className="bg-white/5 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition duration-300">
-    //       <FaComments size={20} />
-    //     </button>
-    //   </Link>
-    // </div>
   );
 }
