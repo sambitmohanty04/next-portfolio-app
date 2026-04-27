@@ -7,7 +7,7 @@ import { MdDesignServices } from "react-icons/md";
 const Services = () => {
   return (
     <>
-        <div className='py-16'>
+        <div className='py-16' id="services">
             <h1 className='text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white'
             data-aos = "fade-up">
                 Work together to deliver impactful<br /> <span className='text-cyan-300'> and result-driven digital solutions.</span>

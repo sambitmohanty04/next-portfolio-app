@@ -47,7 +47,7 @@ const NavSec = ({openNav} : Props) => {
             </div>
             {/*---- Cv Button ----*/}
             <div className='flex items-center space-x-4'>
-                <a href='Sambit_Mohanty_cv.pdf' download>
+                <a href='Sambit_Mohanty_Resume.pdf' download>
                     <button className='px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-700 hover:bg-blue-900
                     transition-all duration-300 text-white flex items-center space-x-2'>
                         <BiDownload className='w-5 h-5' />

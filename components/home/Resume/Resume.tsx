@@ -7,7 +7,7 @@ import { RiGraduationCapLine } from "react-icons/ri";
 const Resume = () => {
   return (
     <>
-        <div className='py-16'>
+        <div className='py-16' id="resume">
             <div className='w-[90%] sm:[w-70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10'>   
                 {/* ----work sec---- */}
                 <div>
