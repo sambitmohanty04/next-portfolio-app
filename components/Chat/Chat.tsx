@@ -11,7 +11,10 @@ export default function Chat() {
   return (
     <>
       {open && (
-        <div className="fixed bottom-20 right-5 w-80 h-96 bg-white shadow-xl rounded-lg p-3">
+        // <div className="d-none fixed bottom-20 right-5 w-80 h-96 bg-white shadow-xl rounded-lg p-3">
+        //   <ChatBox />
+        // </div>
+        <div className="hidden bottom-20 right-5 w-80 h-96 bg-white shadow-xl rounded-lg p-3">
           <ChatBox />
         </div>
       )}
