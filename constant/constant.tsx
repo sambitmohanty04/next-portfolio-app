@@ -28,6 +28,11 @@ export const NavLinks = [
     },
     {
         id : 6,
+        url : '#blogs',
+        label : 'Blogs'
+    },
+    {
+        id : 6,
         url : '#contact',
         label : 'Contact'
     }
